@@ -9,7 +9,7 @@ const monk = require('monk');
 const rateLimit = require('express-rate-limit');
 const slowDown = require('express-slow-down');
 
-if (process.env.NODE_END !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 

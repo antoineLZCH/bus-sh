@@ -60,9 +60,6 @@ app.post('/url', slowDown({
             slug,
             url,
         });
-        if (url.includes('cdg.sh')) {
-            throw new Error('Stop it. 🛑');
-        }
         if (!slug) {
             slug = nanoid(5);
         } else {
